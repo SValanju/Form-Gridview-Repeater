@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TemplatePage.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Unna:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link href="Content/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.0.0.slim.min.js"></script>
+    <script src="Scripts/bootstrap.bundle.js"></script>
+    <link href="Content/css/StyleSheet.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="WebForm.aspx"><img src="Content/Files/cool.png" width="140"></a>
+            <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Service">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <footer class="footerbg">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="py-2 mb-3" >
+                            <div class="text-center">
+                                <a class="navbar-brand" href="#"><img src="Content/Files/cool.png" width="150"></a>
+                                <p class="text-justify pr-3 pl-3 text-light">COOL HIGHS SARVICES Service & Repair All types of Air Conditioner Refrigeration Fridge Washing Wachine Dispenser water ro aquaguard</p>
+                            </div>
+                            <p class="text-justify text-dark mt-2 py-2 pr-2 pl-2"></p>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <h3 class="text-light">Social Links</h3>
+                        <ul class="socialLinks">
+                            <li class=""><a href="#">Facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Linkedin</a></li>
+                            <li><a href="#">Youtube</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="text-light">Quick Links</h3>
+                        <ul class="socialLinks">
+                            <li class=""><a href="Home">Home</a></li>
+                            <li><a href="About">About</a></li>
+                            <li><a href="property">Property</a></li>
+                            <li><a href="Service">Service</a></li>
+                            <li><a href="Contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a class="text-light text-decoration-none" href="https://dynamitetechnology.in/">Design By: Dynamite Technology Pvt. Ltd.</a>
+                </div>
+            </div>
+        </footer>
+
+</body>
+</html>
